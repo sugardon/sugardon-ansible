@@ -1,0 +1,10 @@
+{
+  "yaml.completion": true,
+  "yaml.format.enable": true,
+  "yaml.validate": true,
+  "yaml.schemas": {
+    "https://json.schemastore.org/ansible-role-2.9": "roles/*.yml",
+    "https://json.schemastore.org/ansible-inventory": "inventories/*.yml",
+    "https://json.schemastore.org/ansible-playbook": "playbooks/*.yml"
+  }
+}

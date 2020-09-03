@@ -1,0 +1,9 @@
+exclude_paths:
+  - ./galaxy_roles/
+  - ./inventories/sugardon01/group_vars/
+skip_list:
+  - '403'
+parseable: true
+quiet: true
+use_default_rules: true
+verbosity: 1
