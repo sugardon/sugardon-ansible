@@ -1,0 +1,2 @@
+[cluster]
+node1 ansible_host=153.122.55.136 ip=153.122.55.136
