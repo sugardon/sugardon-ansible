@@ -1,0 +1,10 @@
+---
+- hosts: cluster
+  become: true
+  gather_facts: true
+
+  roles:
+    - user
+    - sshd
+    - ansible-role-repo-epel
+    - centos8_kubespray_common
