@@ -1,0 +1,30 @@
+---
+- name: add groups
+  group:
+    name: "{{ item.name }}"
+    gid: "{{ item.gid }}"
+    state: present
+  with_items: "{{ sugardon_groups }}"
+  become: true
+
+- name: Add users
+  user:
+    name: "{{ item.name }}"
+    uid: "{{ item.uid }}"
+    group: "{{ item.group }}"
+    groups: ["{{ item.groups }}"]
+    state: present
+  with_items: "{{ sugardon_users }}"
+  become: true
+
+- name: Add SSH authorized keys
+  authorized_key:
+    user: "{{ item.name }}"
+    key: "{{ lookup('file', item.authorized_key_file) }}"
+  with_items: "{{ sugardon_users }}"
+  become: true
+
+- name: Lets wheel sudo without password
+  lineinfile:
+    line: "%wheel ALL= NOPASSWD: ALL"
+    dest: /etc/sudoers

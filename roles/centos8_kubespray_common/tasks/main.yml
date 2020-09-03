@@ -1,0 +1,37 @@
+---
+# cf. https://qiita.com/suzuyui/items/e7531fe5e1e84c061b23
+# cf. https://github.com/kubernetes-sigs/kubespray/blob/master/README.md#requirements
+- name: Selinux Disabled
+  selinux:
+    state: disabled
+  register: selinux
+  become: true
+
+- name: Update dnf packages
+  dnf:
+    name: '*'
+    state: latest
+  become: true
+
+- name: install sshpass vim
+  dnf:
+    name: "{{ packages }}"
+  vars:
+    packages:
+      - sshpass
+      - vim
+    state: present
+  become: true
+
+- name: stop and disable firewalld
+  systemd:
+    name: firewalld
+    state: stopped
+    enabled: false
+  become: true
+
+- name: reboot
+  reboot:
+    reboot_timeout: 3600
+  when: selinux.reboot_required
+  become: true
