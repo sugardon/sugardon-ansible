@@ -2,7 +2,7 @@
 extends: default
 
 ignore: |
-    .git/
+    .github/
     galaxy_roles/
     inventories/sugardon01/group_vars/
 
