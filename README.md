@@ -15,5 +15,5 @@ $ ansible-playbook -i inventories/kubernetes_sugardon01/hosts playbooks/first_ti
 ## kubespray presetup - centos8
 
 ```bash
-$ ansible-playbook -i inventories/kubernetes_sugardon01/hosts playbooks/kubespray_presetup_centos8.yml -vvv --Kk
+$ ansible-playbook -i inventories/kubernetes_sugardon01/hosts playbooks/kubespray_presetup_centos8.yml -vvv
 ```
