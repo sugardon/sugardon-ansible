@@ -1,0 +1,11 @@
+---
+sugardon_groups:
+  - name: sugardon_admin
+    gid: 7000
+
+sugardon_users:
+  - name: sugardon_admin
+    uid: 7000
+    group: sugardon_admin
+    groups: wheel,sugardon_admin
+    authorized_key_file: keys/sugardon_admin.pub
