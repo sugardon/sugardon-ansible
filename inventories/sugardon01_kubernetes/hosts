@@ -1,3 +1,3 @@
 [cluster]
-master01 ansible_host=153.122.23.167 ip=153.122.23.167
-worker01 ansible_host=153.122.23.225 ip=153.122.23.225
+master01 ansible_host=172.18.60.18 ip=172.18.60.18
+worker01 ansible_host=172.18.60.23 ip=172.18.60.23
