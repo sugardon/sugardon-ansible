@@ -20,7 +20,7 @@
 - name: Add SSH authorized keys
   authorized_key:
     user: "{{ item.name }}"
-    key: "{{ lookup('file', item.authorized_key_file) }}"
+    key: "{{ lookup('url', item.authorized_key_url) }}"
   with_items: "{{ sugardon_users }}"
   become: true
 

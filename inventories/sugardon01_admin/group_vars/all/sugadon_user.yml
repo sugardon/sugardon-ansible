@@ -8,4 +8,4 @@ sugardon_users:
     uid: 7000
     group: sugardon_admin
     groups: wheel,sugardon_admin
-    authorized_key_file: keys/sugardon_admin.pub
+    authorized_key_url: https://github.com/sugardon.keys

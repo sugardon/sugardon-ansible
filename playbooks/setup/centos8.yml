@@ -8,3 +8,5 @@
     - sshd
     - ansible-role-repo-epel
     - centos8_common
+    # cf. https://github.com/avanov/ansible-galaxy-pyenv/issues/45
+    # - ansible-galaxy-pyenv

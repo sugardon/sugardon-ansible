@@ -16,6 +16,7 @@
     name: "{{ packages }}"
   vars:
     packages:
+      - python3-libselinux
       - vim
     state: present
   become: true
