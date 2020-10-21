@@ -1,0 +1,13 @@
+---
+sugardon_groups:
+  - name: sugardon_admin
+    gid: 7000
+  - name: docker
+    gid: 1750
+
+sugardon_users:
+  - name: sugardon_admin
+    uid: 7000
+    group: sugardon_admin
+    groups: sudo,sugardon_admin,docker
+    authorized_key_url: https://github.com/sugardon.keys

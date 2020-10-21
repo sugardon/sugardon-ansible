@@ -1,5 +1,4 @@
 ---
-# 初回限定 全OS共通であることが望ましい
 - hosts: all
   become: true
   gather_facts: true
@@ -7,3 +6,5 @@
   roles:
     - user
     - sshd
+    - jetson_nano_common
+    - ansible-galaxy-pyenv

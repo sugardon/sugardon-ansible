@@ -1,0 +1,12 @@
+---
+# https://medium.com/jit-team/building-a-gpu-enabled-kubernets-cluster-for-machine-learning-with-nvidia-jetson-nano-7b67de74172a
+# TODO: owner, group ちゃんと調べる
+- name: docker.json
+  copy:
+    src: daemon.json
+    dest: /etc/docker/daemon.json
+    owner: root
+    group: root
+    mode: 0644
+    backup: true
+  register: docker_json

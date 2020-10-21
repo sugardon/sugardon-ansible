@@ -24,7 +24,12 @@
   with_items: "{{ sugardon_users }}"
   become: true
 
-- name: Lets wheel sudo without password
+- name: Lets wheel sudo without password (CentOS)
   lineinfile:
     line: "%wheel ALL= NOPASSWD: ALL"
+    dest: /etc/sudoers
+
+- name: Lets sudo sudo without password (Ubuntu)
+  lineinfile:
+    line: "%sudo ALL= NOPASSWD: ALL"
     dest: /etc/sudoers
