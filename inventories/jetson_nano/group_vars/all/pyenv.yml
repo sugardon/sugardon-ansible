@@ -1,0 +1,12 @@
+---
+# cf. https://github.com/avanov/ansible-galaxy-pyenv
+# pyenv_path: "{{ home }}/pyenv"
+# pyenv_owner: "{{ instance_owner }}"
+pyenv_global: "3.8.6"
+pyenv_update_git_install: true
+pyenv_enable_autocompletion: false
+pyenv_python_versions:
+  - "3.8.6"
+pyenv_virtualenvs:
+  - venv_name: "ansible_default"
+    py_version: "3.8.6"
