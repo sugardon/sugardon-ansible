@@ -1,7 +1,7 @@
 ---
 # cf. https://github.com/avanov/ansible-galaxy-pyenv
-# pyenv_path: "{{ home }}/pyenv"
-# pyenv_owner: "{{ instance_owner }}"
+pyenv_path: "/home/sugardon_admin/.pyenv"
+pyenv_owner: "sugardon_admin"
 pyenv_global: "3.8.6"
 pyenv_update_git_install: true
 pyenv_enable_autocompletion: false
