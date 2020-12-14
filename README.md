@@ -15,10 +15,10 @@ $ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 $ ANSIBLE_CONFIG=playbooks/first_time/ansible.cfg ansible-playbook -i inventories/${INVENTORY}/hosts playbooks/first_time/setup.yml -vvv
 ```
 
-## Run Kubespray Presetup
+## Run sugardon01 Setup
 
 ```bash
-$ ANSIBLE_CONFIG=playbooks/kubespray_presetup/ansible.cfg ansible-playbook -i inventories/${INVENTORY}/hosts playbooks/kubespray_presetup/centos8.yml -vvv
+$ ANSIBLE_CONFIG=playbooks/sugardon01_setup/ansible.cfg ansible-playbook -i inventories/${INVENTORY}/hosts playbooks/sugardon01_setup/centos8.yml -vvv
 ```
 
 ## RUN Jetson nano
