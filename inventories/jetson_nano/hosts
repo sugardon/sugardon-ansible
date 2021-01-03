@@ -1,2 +1,0 @@
-[server]
-jetson-nano-01 ansible_host=192.168.20.211 ip=192.168.20.211
