@@ -6,6 +6,7 @@
     update_cache: true
     pkg:
       - vim
+      - python
 
 - name: Update all packages to their latest version
   apt:
