@@ -1,2 +1,5 @@
 [jetsonnano]
 sugardon02-jn01 ansible_host=192.168.21.11 ip=192.168.21.11
+
+[raspberrypi]
+sugardon02-rp01 ansible_host=192.168.21.12 ip=192.168.21.12
