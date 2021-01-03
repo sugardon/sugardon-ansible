@@ -1,0 +1,13 @@
+---
+# ansible apt
+# cf. https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
+- name: Install a list of packages
+  apt:
+    update_cache: true
+    pkg:
+      - vim
+
+- name: Update all packages to their latest version
+  apt:
+    name: "*"
+    state: latest

@@ -1,10 +1,11 @@
 ---
-- hosts: all
+- hosts: jetsonnano
   become: true
   gather_facts: true
 
   roles:
     - user
     - sshd
+    - apt
     - jetson_nano_common
     - ansible-galaxy-pyenv

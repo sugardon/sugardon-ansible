@@ -21,12 +21,13 @@ $ ANSIBLE_CONFIG=playbooks/first_time/ansible.cfg ansible-playbook -i inventorie
 $ ANSIBLE_CONFIG=playbooks/sugardon01_setup/ansible.cfg ansible-playbook -i inventories/${INVENTORY}/hosts playbooks/sugardon01_setup/centos8.yml -vvv
 ```
 
-## RUN Jetson nano
+## Run sugardon02 Setup
+
 ```bash
-$ ansible-playbook -i inventories/jetson_nano/hosts playbooks/setup/jetson_nano.yml -vvv
+$ ansible-playbook -i inventories/sugardon02/hosts playbooks/sugardon02_setup/sugardon02.yml -vvv
 ```
 
-## RUN
+## Run other
 
 ```bash
 $ ansible-playbook -i inventories/${INVENTORY}/hosts playbooks/${PLAYBOOK} -vvv
