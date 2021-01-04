@@ -20,3 +20,5 @@
     - apt
     - raspberrypi_common
     - ansible-galaxy-pyenv
+
+# TODO: Should check DNS server
