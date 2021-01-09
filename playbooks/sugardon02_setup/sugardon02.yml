@@ -9,6 +9,12 @@
     - apt
     - jetson_nano_common
     - ansible-galaxy-pyenv
+  tasks:
+    # Should disable ipv6
+    # cf. https://serverfault.com/questions/957161/error-when-trying-to-enable-ufw-logs-on-ubuntu
+    - name: Disable UFW
+      ufw:
+        state: disabled
 
 - hosts: raspberrypi
   become: true
@@ -20,5 +26,9 @@
     - apt
     - raspberrypi_common
     - ansible-galaxy-pyenv
+  tasks:
+    - name: Disable UFW
+      ufw:
+        state: disabled
 
 # TODO: Should check DNS server
