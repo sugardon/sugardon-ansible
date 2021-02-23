@@ -31,9 +31,11 @@ $ ansible-playbook -i inventories/sugardon02/hosts playbooks/sugardon02_setup/su
 
 1. (First time) Run First time
 
+Use flag `--connection=local`
+
 1. Run dev tool
 ```bash
-$ ansible-playbook -i inventories/dev_tool/hosts playbooks/dev_tool/ubuntu.yml -vvv
+$ ansible-playbook -i inventories/dev_tool/hosts playbooks/dev_tool/ubuntu.yml -vvv --connection=local
 ```
 
 ## Run other
