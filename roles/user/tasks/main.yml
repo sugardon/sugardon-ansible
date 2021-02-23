@@ -28,8 +28,12 @@
   lineinfile:
     line: "%wheel ALL= NOPASSWD: ALL"
     dest: /etc/sudoers
+  when:
+    - user_disable_sudopass
 
 - name: Lets sudo sudo without password (Ubuntu)
   lineinfile:
     line: "%sudo ALL= NOPASSWD: ALL"
     dest: /etc/sudoers
+  when:
+    - user_disable_sudopass
