@@ -7,7 +7,7 @@ sugardon_users:
   - name: sugardon_admin
     uid: 7000
     group: sugardon_admin
-    groups: wheel,sugardon_admin
+    groups: sudo,sugardon_admin
     authorized_key_url: https://github.com/sugardon.keys
 
 user_disable_sudopass: false
