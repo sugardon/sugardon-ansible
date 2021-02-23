@@ -27,6 +27,15 @@ $ ANSIBLE_CONFIG=playbooks/sugardon01_setup/ansible.cfg ansible-playbook -i inve
 $ ansible-playbook -i inventories/sugardon02/hosts playbooks/sugardon02_setup/sugardon02.yml -vvv
 ```
 
+## Dev Tool - ubuntu
+
+1. (First time) Run First time
+
+1. Run dev tool
+```bash
+$ ansible-playbook -i inventories/dev_tool/hosts playbooks/dev_tool/ubuntu.yml -vvv
+```
+
 ## Run other
 
 ```bash
