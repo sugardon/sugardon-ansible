@@ -4,7 +4,7 @@
 - name: Install a list of packages
   apt:
     update_cache: true
-    pkg: ["{{apt_pkgs}}"]
+    pkg: "{{ apt_pkgs }}"
 
 - name: Update all packages to their latest version
   apt:
