@@ -4,3 +4,4 @@ apt_pkgs:
   - python
   - ufw
   - zsh
+  - rcm

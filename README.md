@@ -35,7 +35,7 @@ Use flag `--connection=local`
 
 1. Run dev tool
 ```bash
-$ ansible-playbook -i inventories/dev_tool/hosts playbooks/dev_tool/ubuntu.yml -vvv --connection=local
+$ sudo ansible-playbook -i inventories/dev_tool/hosts playbooks/dev_tool/ubuntu.yml -vvv --connection=local
 ```
 
 ## Run other
