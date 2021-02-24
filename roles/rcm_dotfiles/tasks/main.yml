@@ -1,11 +1,11 @@
 ---
 - name: rcm dotfiles | git checkout
   ansible.builtin.git:
-    repo: "{{ rcm_dotfiles_repo }}"
-    dest: "{{ rcm_dotfiles_dest }}"
-    version: "{{ rcm_dotfiles_version }}"
+    repo: "{{ rcm_dotfiles_git_repo }}"
+    dest: "{{ rcm_dotfiles_git_dest }}"
+    version: "{{ rcm_dotfiles_git_version }}"
 
 - name: rcm dotfiles | rcup
-  shell: rcup
+  shell: rcup -d {{ rcm_dotfiles_install_dest }}
   args:
-    chdir: "{{ rcm_dotfiles_dest }}"
+    chdir: "{{ rcm_dotfiles_git_dest }}"
