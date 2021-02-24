@@ -1,7 +1,0 @@
----
-apt_pkgs:
-  - vim
-  - python
-  - ufw
-  - zsh
-  - rcm
