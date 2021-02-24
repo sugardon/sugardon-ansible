@@ -4,8 +4,6 @@
     repo: "{{ rcm_dotfiles_git_repo }}"
     dest: "{{ rcm_dotfiles_git_dest }}"
     version: "{{ rcm_dotfiles_git_version }}"
-  become: true
-  become_user: "{{ rcm_dotfiles_user }}"
 
 - name: rcm dotfiles | rcup
   shell: RCRC={{ rcm_dotfiles_git_dest }}/rcrc rcup
@@ -13,3 +11,9 @@
     chdir: "{{ rcm_dotfiles_git_dest }}"
   become: true
   become_user: "{{ rcm_dotfiles_user }}"
+
+- name: rcm dotfiles | owner
+  file:
+    path: "{{ rcm_dotfiles_git_dest }}"
+    owner: "{{ rcm_dotfiles_user }}"
+    recurse: true
