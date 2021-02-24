@@ -1,5 +1,5 @@
 ---
+rcm_dotfiles_user: "sugardon_admin"
 rcm_dotfiles_git_repo: "https://github.com/sugardon/dotfiles.git"
 rcm_dotfiles_git_dest: "/home/sugardon_admin/dotfiles"
 rcm_dotfiles_git_version: HEAD
-rcm_dotfiles_install_dest: "/home/sugardon_admin"

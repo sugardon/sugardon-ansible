@@ -9,3 +9,5 @@
   shell: rcup -d {{ rcm_dotfiles_install_dest }}
   args:
     chdir: "{{ rcm_dotfiles_git_dest }}"
+  become: true
+  become_user: "{{ rcm_dotfiles_user }}"
