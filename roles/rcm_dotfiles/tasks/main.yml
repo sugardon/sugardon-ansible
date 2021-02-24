@@ -9,5 +9,5 @@
   shell: rcup
   args:
     chdir: "{{ rcm_dotfiles_git_dest }}"
-  become: no
-  remote_user: "{{ rcm_dotfiles_user }}"
+  become: true
+  become_user: {{ rcm_dotfiles_user }}
