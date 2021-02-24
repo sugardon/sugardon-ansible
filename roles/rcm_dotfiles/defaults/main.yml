@@ -1,0 +1,4 @@
+---
+rcm_dotfiles_repo: "https://github.com/sugardon/dotfiles.git"
+rcm_dotfiles_dest: "/home/sugardon_admin/dotfiles"
+rcm_dotfiles_version: HEAD
