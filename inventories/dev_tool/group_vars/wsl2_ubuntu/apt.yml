@@ -1,5 +1,6 @@
 ---
 apt_pkgs:
+  - language-pack-ja
   - vim
   - python
   - ufw
