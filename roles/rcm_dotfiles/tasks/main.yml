@@ -6,7 +6,7 @@
     version: "{{ rcm_dotfiles_git_version }}"
 
 - name: rcm dotfiles | rcup
-  shell: rcup
+  shell: RCRC={{ rcm_dotfiles_git_dest }}/rcrc rcup
   args:
     chdir: "{{ rcm_dotfiles_git_dest }}"
   become: true
