@@ -4,6 +4,8 @@
     repo: "{{ rcm_dotfiles_git_repo }}"
     dest: "{{ rcm_dotfiles_git_dest }}"
     version: "{{ rcm_dotfiles_git_version }}"
+  become: true
+  become_user: "{{ rcm_dotfiles_user }}"
 
 - name: rcm dotfiles | rcup
   shell: RCRC={{ rcm_dotfiles_git_dest }}/rcrc rcup
