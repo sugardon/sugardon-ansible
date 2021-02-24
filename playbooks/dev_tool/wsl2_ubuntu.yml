@@ -1,7 +1,6 @@
 ---
 - hosts: all
   become: true
-  become_user: "{{ dev_tool_become_user }}"
   gather_facts: true
 
   roles:
