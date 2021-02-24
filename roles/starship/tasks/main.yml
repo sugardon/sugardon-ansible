@@ -1,0 +1,15 @@
+---
+- name: starship | Download install.sh
+  get_url:
+    url: https://starship.rs/install.sh
+    dest: /tmp/starship_install.sh
+
+- name: starship | Install
+  shell: /tmp/starship_install.sh
+  args:
+    executable: /bin/bash
+
+- name: starship | Remove install.sh
+  file:
+    path: /tmp/starship_install.sh
+    state: absent
