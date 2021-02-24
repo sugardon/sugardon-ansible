@@ -9,3 +9,4 @@
     - apt
     - ansible-galaxy-pyenv
     - starship
+    - rcm_dotfiles
