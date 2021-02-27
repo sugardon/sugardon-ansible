@@ -8,5 +8,6 @@
     - sshd
     - apt
     - ansible-galaxy-pyenv
+    - ansible-nvm-node
     - starship
     - rcm_dotfiles
