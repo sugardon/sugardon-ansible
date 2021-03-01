@@ -1,6 +1,7 @@
 ---
 apt_pkgs:
   - language-pack-ja
+  - snapd
   - vim
   - python
   - ufw
