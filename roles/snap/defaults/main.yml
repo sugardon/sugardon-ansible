@@ -1,6 +1,7 @@
 ---
 snap_manual_items:
+  # https://snapcraft.io/helm
   - name: helm
-    channel: stable
+    channel: latest/stabe
     classic: true
     state: present
