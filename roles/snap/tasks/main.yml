@@ -2,7 +2,7 @@
 - name: snap | Manual Install
   snap:
     name: "{{ item.name }}"
-    channel: "{{ item.channel | default(latest/stable) }}"
+    channel: "{{ item.channel | default('latest/stable') }}"
     classic: "{{ item.classic | default(false) }}"
     state: "{{ item.state | default(present) }}"
   with_items: "{{ snap_manual_items }}"
