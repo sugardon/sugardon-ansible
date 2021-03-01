@@ -1,0 +1,6 @@
+---
+snap_manual_items:
+  - name: helm
+    channel: stable
+    classic: true
+    state: present
