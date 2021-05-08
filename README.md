@@ -18,7 +18,7 @@ $ ANSIBLE_CONFIG=playbooks/first_time/ansible.cfg ansible-playbook -i inventorie
 ## Run sugardon01 Setup
 
 ```bash
-$ ANSIBLE_CONFIG=playbooks/sugardon01_setup/ansible.cfg ansible-playbook -i inventories/${INVENTORY}/hosts playbooks/sugardon01_setup/centos8.yml -vvv
+$ ANSIBLE_CONFIG=playbooks/sugardon01_setup/ansible.cfg ansible-playbook -i inventories/sugardon01/hosts playbooks/sugardon01_setup/sugardon01.yml -vvv
 ```
 
 ## Run sugardon02 Setup

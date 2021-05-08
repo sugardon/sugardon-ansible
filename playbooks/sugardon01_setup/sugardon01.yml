@@ -1,0 +1,11 @@
+---
+- hosts:
+    - admin
+    - cluster
+  become: true
+  gather_facts: true
+
+  roles:
+    - user
+    - sshd
+    - apt
