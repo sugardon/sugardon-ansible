@@ -1,3 +1,0 @@
-[cluster]
-master01 ansible_host=172.18.60.18 ip=172.18.60.18
-worker01 ansible_host=172.18.60.23 ip=172.18.60.23

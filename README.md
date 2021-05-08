@@ -12,7 +12,7 @@ $ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 ## First time
 
 ```bash
-$ ANSIBLE_CONFIG=playbooks/first_time/ansible.cfg ansible-playbook -i inventories/${INVENTORY}/hosts playbooks/first_time/setup.yml -vvv
+$ ANSIBLE_CONFIG=playbooks/first_time/ansible.cfg ansible-playbook -i inventories/${INVENTORY}/hosts playbooks/first_time/setup.yml --ask-become-pass -vvv
 ```
 
 ## Run sugardon01 Setup

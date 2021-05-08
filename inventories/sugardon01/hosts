@@ -1,0 +1,11 @@
+[global]
+global_admin ansible_host=153.127.69.34 ip=153.127.69.34
+global_master01 ansible_host=133.125.44.137 ip=133.125.44.137
+global_worker01 ansible_host=153.127.56.5 ip=153.127.56.5
+
+[admin]
+admin ansible_host=192.168.120.11 ip=192.168.120.11
+
+[cluster]
+master01 ansible_host=192.168.120.12 ip=192.168.120.12
+worker01 ansible_host=192.168.120.13 ip=192.168.120.13

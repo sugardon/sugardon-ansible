@@ -1,6 +1,7 @@
 ---
 # 初回限定 全OS共通であることが望ましい
-- hosts: all
+# For sugardon01
+- hosts: global
   become: true
   gather_facts: true
 
