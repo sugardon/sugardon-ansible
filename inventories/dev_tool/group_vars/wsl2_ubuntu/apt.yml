@@ -12,3 +12,4 @@ apt_pkgs:
   # https://github.com/nvm-sh/nvm#important-notes
   - build-essential
   - libssl-dev
+  - haskell-stack
