@@ -33,7 +33,7 @@ $ ansible-playbook -i inventories/sugardon02/hosts playbooks/sugardon02_setup/su
   Use flag `--connection=local`
 1. Run dev tool
   ```bash
-  $ sudo ansible-playbook -i inventories/dev_tool/hosts playbooks/dev_tool/wsl2_ubuntu.yml -vvv --connection=local
+  $ sudo ansible-playbook -i inventories/dev_tool/hosts -l wsl2_ubuntu playbooks/dev_tool/wsl2_ubuntu.yml -vvv --connection=local
   ```
 
 ## Run other

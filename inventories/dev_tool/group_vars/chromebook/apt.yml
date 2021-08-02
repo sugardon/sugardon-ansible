@@ -1,0 +1,21 @@
+---
+apt_pkgs:
+  - locales
+  # for chromebook
+  # https://stackoverflow.com/questions/60859806/chromeos-error-system-does-not-fully-support-snapd-cannot-mount-squashfs-imagquashfuse0
+  - libsquashfuse0
+  - squashfuse
+  - fuse
+  - snapd
+  - vim
+  - python
+  - ufw
+  - zsh
+  - rcm
+  - neovim
+  - python3-neovim
+  # for nvm
+  # https://github.com/nvm-sh/nvm#important-notes
+  - build-essential
+  - libssl-dev
+  - haskell-stack

@@ -1,0 +1,7 @@
+---
+# cf. https://github.com/grzegorznowak/ansible-nvm-node
+nvm_install_script_version: "0.37.2"
+nvm_user_name: "sugardon_admin"
+nvm_dir: "/home/sugardon_admin/.nvm"
+nvm_node_version: "14.16.0"
+nvm_install_globally: ["yarn"]
