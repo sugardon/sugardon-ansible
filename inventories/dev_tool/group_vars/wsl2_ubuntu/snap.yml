@@ -7,3 +7,4 @@ snap_manual_items:
     state: present
   - name: ccls
     classic: true
+  - name: yq
