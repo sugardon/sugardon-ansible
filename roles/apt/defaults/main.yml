@@ -1,5 +1,5 @@
 ---
 apt_pkgs:
   - vim
-  - python
+  - python3
   - ufw

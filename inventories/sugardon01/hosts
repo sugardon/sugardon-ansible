@@ -1,13 +1,13 @@
 [global]
 global_admin ansible_host=153.127.69.34 ip=153.127.69.34
-global_master01 ansible_host=133.125.44.137 ip=133.125.44.137
-global_worker01 ansible_host=153.127.56.5 ip=153.127.56.5
-global_worker02 ansible_host=153.127.66.28 ip=153.127.66.28
+global_node01 ansible_host=133.125.44.137 ip=133.125.44.137
+global_node02 ansible_host=153.127.56.5 ip=153.127.56.5
+global_node03 ansible_host=153.127.66.28 ip=153.127.66.28
 
 [admin]
 admin ansible_host=192.168.120.11 ip=192.168.120.11
 
 [cluster]
-master01 ansible_host=192.168.120.12 ip=192.168.120.12
-worker01 ansible_host=192.168.120.13 ip=192.168.120.13
-worker02 ansible_host=192.168.120.14 ip=192.168.120.14
+node01 ansible_host=192.168.120.21 ip=192.168.120.21
+node02 ansible_host=192.168.120.22 ip=192.168.120.22
+node03 ansible_host=192.168.120.23 ip=192.168.120.23
