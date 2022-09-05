@@ -18,7 +18,8 @@
     - user
     - sshd
     - apt
-    - docker
+    # kubespray will install docker (cri)
+    #- docker
   tasks:
     - name: Disable UFW
       ufw:
