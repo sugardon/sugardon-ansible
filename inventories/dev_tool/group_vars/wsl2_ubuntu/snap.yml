@@ -8,3 +8,6 @@ snap_manual_items:
   - name: ccls
     classic: true
   - name: yq
+  - name: kubectl
+    classic: true
+    channel: latest/stable
