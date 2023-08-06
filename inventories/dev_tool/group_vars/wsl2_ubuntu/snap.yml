@@ -11,3 +11,9 @@ snap_manual_items:
   - name: kubectl
     classic: true
     channel: latest/stable
+  - name: nvim
+    classic: true
+    channel: latest/stable
+  - name: go
+    classic: true
+    channel: latest/stable
