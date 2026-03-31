@@ -1,5 +1,2 @@
 [wsl2_ubuntu]
 wsl2_ubuntu ansible_host=127.0.0.1 ip=127.0.0.1
-
-[chromebook]
-chromebook ansible_host=127.0.0.1 ip=127.0.0.1

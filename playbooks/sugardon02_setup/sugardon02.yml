@@ -8,7 +8,6 @@
     - sshd
     - apt
     - jetson_nano_common
-    - ansible-galaxy-pyenv
   tasks:
     # Should disable ipv6
     # cf. https://serverfault.com/questions/957161/error-when-trying-to-enable-ufw-logs-on-ubuntu
@@ -25,7 +24,6 @@
     - sshd
     - apt
     - raspberrypi_common
-    - ansible-galaxy-pyenv
   tasks:
     - name: Disable UFW
       ufw:
