@@ -8,8 +8,5 @@
     - sshd
     - apt
     - snap
-    - ansible-galaxy-pyenv
-    # Use https://github.com/lukechilds/zsh-nvm instead of ansible
-    # - ansible-nvm-node
     - starship
     - rcm_dotfiles
